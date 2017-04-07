@@ -1,0 +1,133 @@
+/* GENERAL */
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 640px) {
+  header .hamburger {
+    display: inline !important;
+  }
+
+  aside {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    top: 100px;
+    left: -300px;
+    overflow-x: hidden;
+    transition-duration: 0.5s;
+  }
+  .aside-hidden {
+    left: 0px;
+    visibility: visible;
+    width: 230px !important;
+    transition-duration: 0.5s;
+  }
+
+  article {
+    padding: 10px !important;
+  }
+}
+
+/* HEADER */
+header {
+  text-align: left;
+  background-color: #2F4F4F;
+  padding: 8px;
+  color: white;
+}
+
+header h1 {
+  font-weight: 700;
+  text-align: left;
+  padding-left: 20px;
+  flex: 1;
+}
+
+header .hamburger {
+  font-size: 32px;
+  font-size: 2em;
+  margin: 0.67em;
+  cursor: pointer;
+  display: none;
+}
+
+/* ASIDE NAVBAR */
+aside {
+  flex: 0 0 230px;
+  background-color: #EDEDED;
+  min-height: 90vh;
+  padding: 0px 30px;
+}
+
+aside form {
+  margin-top: 85px;
+  text-align: center;
+}
+
+aside form input, aside form select {
+  width: 90%;
+  height: 24px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 5px;
+  background-color: white;
+}
+
+aside form button {
+  padding: 10px;
+  background-color: #2F4F4F;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  width: 100px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+aside form button:hover {
+  background-color: green;
+  transition-duration: 0.4s;
+}
+
+/* ARTICLE */
+article {
+  padding: 25px;
+}
+
+.article-text {
+  margin: 30px;
+  margin-top: 80px;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+#language-input {
+  height: 36px;
+  width: 219px;
+}
+
+#thumbnail {
+  padding-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#random {
+  position: fixed;
+  padding-top: 95px;
+}

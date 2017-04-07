@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Wikimedia task</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<!--Scripts-->
+		<script type="text/javascript" src="vanilla.js"></script>
+	</head>
+
+	<body>
+		<header class="flex-container" style="align-items: center;">
+			<div><span class="hamburger" id="hamburger">&#9776;</span></div>
+			<h1 class="header-title" id="header-title">Wikimedia Task</h1>
+		</header>
+		<section class="main flex-container">
+				<aside class="sidebar" id="sidebar">
+
+						<form class="form">
+	  					<input type="text" id="article-input" placeholder="Search Article" required><br />
+							<select id="language-input">
+	  						<option value="en">English</option>
+								<option value="es">Spanish</option>
+								<option value="ceb">Cebuano</option>
+								<option value="sv">Swedish</option>
+								<option value="ja">日本語</option>
+								<option value="nl">Dutch</option>
+								<option value="pt">português</option>
+								<option value="ru">русский</option>
+	  						<option value="fr">French</option>
+								<option value="sk">slovenčina</option>
+	  						<option value="de">German</option>
+	  						<option value="it">Italian</option>
+								<option value="hi">हिंदी</option>
+								<option value="gu">ગુજરાતી</option>
+								<option value="ur">اردو</option>
+								<option value="bn">বাংলা</option>
+								<option value="ta">தமிழ்</option>
+								<option value="ml">മലയാളം</option>
+								<option value="zh">中文</option>
+								<option value="vi">Tiếng Việt</option>
+							</select>
+							<br />
+							<button id="submit">Fetch</button>
+						</form>
+						<figure id="random">
+							<a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank" title="Visit mediawiki API"><img src="http://res.cloudinary.com/forgoroe/image/upload/c_scale,w_160/v1476883031/logos/2000px-Wikipedia-logo-v2-en.svg.png" alt="Wiki-logo"></a>
+						</figure>
+
+				</aside>
+				<article class="main-article">
+					<img id="thumbnail">
+					<p class="article-text" id="article-text">
+						 <i>Search for Wikipedia articles summary in 25 languages.</i>
+					</p>
+				</article>
+		</section>
+	</body>
+</html>
